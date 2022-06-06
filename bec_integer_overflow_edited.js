@@ -1,6 +1,5 @@
 function batchTransfer(address[] _receivers, uint256 _value) 
 public whenNotPaused returns (bool) {
-
     uint nb = _receivers.length;
     // Integer overflow
     uint256 amount = uint256(nb) * _value;
@@ -15,5 +14,4 @@ public whenNotPaused returns (bool) {
     // Transfer the funds
     [...]
 
-    return true;
  }
