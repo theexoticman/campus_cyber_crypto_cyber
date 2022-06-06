@@ -13,7 +13,7 @@ contract EthCrossChainManager{
      internal returns (bool){
         // [...] Verifications and validations
 
-        _toContract.call(HASH(CONTRACT_ METHOD_NAME), OTHER_PARAMETERS);
+        _toContract.call(HASH(METHOD_NAME), OTHER_PARAMETERS);
         
         // [...] More Verifications and validations and return statement
     }
