@@ -15,7 +15,7 @@ contract EthCrossChainManager{
         // Verifications and validations
         [...]
 
-        _toContract.call(abi.encodePacked(bytes4(keccak256(abi.encodePacked(_method, "(bytes,bytes,uint64)"))), abi.encode(_args, _fromContractAddr, _fromChainId)));
+        _toContract.call(abi.encodePacked(bytes4(keccak256(abi.encodePacked(_method, "(bytes,bytes,uint64)"))), OTHER_PARAMETERS);
         
         // More Verifications and validations
         [...]
