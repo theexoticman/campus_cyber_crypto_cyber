@@ -6,9 +6,7 @@ contract EthCrossChainManager{
         
         _executeCrossChainTx(toContract, OTHER_PARAMETERS);
         
-        // [...] Parameters parsing, verifications and validations
-       
-        return true;
+        // [...]  verifications and validations and return statement
     }
 
      function _executeCrossChainTx(address _toContract, OTHER_PARAMETERS) 
@@ -17,8 +15,7 @@ contract EthCrossChainManager{
 
         _toContract.call(HASH(CONTRACT_ METHOD_NAME), OTHER_PARAMETERS);
         
-        // [...] More Verifications and validations
-        return true;
+        // [...] More Verifications and validations and return statement
     }
 }
 
