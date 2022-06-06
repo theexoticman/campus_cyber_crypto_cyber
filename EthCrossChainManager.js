@@ -8,8 +8,11 @@ contract EthCrossChainManager{
         
         // [...]  verifications and validations and return statement
     }
+}
 
-     function _executeCrossChainTx(address _toContract, OTHER_PARAMETERS) 
+contract EthCrossChainManager{
+
+  function _executeCrossChainTx(address _toContract, OTHER_PARAMETERS) 
      internal returns (bool){
         // [...] Verifications and validations
 
