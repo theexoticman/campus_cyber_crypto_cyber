@@ -3,7 +3,7 @@ contract EthCrossChainManager{
         // Parameters parsing, verifications and validations
         [...]
 
-        _executeCrossChainTx(toContract, toMerkleValue.makeTxParam.method, toMerkleValue.makeTxParam.args, toMerkleValue.makeTxParam.fromContract, toMerkleValue.fromChainID);
+        _executeCrossChainTx(toContract, OTHER_PARAMETERS);
         
         // Parameters parsing, verifications and validations
         [...]
@@ -11,7 +11,7 @@ contract EthCrossChainManager{
         return true;
     }
 
-     function _executeCrossChainTx(address _toContract, bytes memory _method, bytes memory _args, bytes memory _fromContractAddr, uint64 _fromChainId) internal returns (bool){
+     function _executeCrossChainTx(address _toContract, OTHER_PARAMETERS) internal returns (bool){
         // Verifications and validations
         [...]
 
