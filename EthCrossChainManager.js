@@ -1,15 +1,13 @@
 contract EthCrossChainManager{
-    function verifyHeaderAndExecuteTx(bytes memory proof, bytes memory rawHeader, bytes memory headerProof, bytes memory curRawHeader,bytes memory headerSig) whenNotPaused public returns (bool){
-        // Verifications and validations
-      
+    function verifyHeaderAndExecuteTx( PARAMETERS ) whenNotPaused public returns (bool){
+        // Parameters parsing, verifications and validations
         [...]
 
         _executeCrossChainTx(toContract, toMerkleValue.makeTxParam.method, toMerkleValue.makeTxParam.args, toMerkleValue.makeTxParam.fromContract, toMerkleValue.fromChainID);
-
-        // Fire the cross chain event denoting the executation of cross chain tx is successful,
-        // and this tx is coming from other public chains to current Ethereum network
-        emit VerifyHeaderAndExecuteTxEvent(toMerkleValue.fromChainID, toMerkleValue.makeTxParam.toContract, toMerkleValue.txHash, toMerkleValue.makeTxParam.txHash);
-
+        
+        // Parameters parsing, verifications and validations
+        [...]
+       
         return true;
     }
 
